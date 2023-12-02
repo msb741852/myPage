@@ -217,14 +217,20 @@
 }
 .btn_box {
   display: flex;
+  gap: 10px;
   justify-content: flex-end;
 }
 .btn_box a:hover {
   animation: moveUp 1s linear;
 }
-.github_btn {
+.btn_box div {
   width: 40px;
   height: 40px;
+}
+.notion_btn {
+  background: url("../img/Notion-logo.png") center / cover;
+}
+.github_btn {
   background: url("../img/github.png") center / cover;
 }
 .my_info_section {
