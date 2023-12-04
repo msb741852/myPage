@@ -233,6 +233,9 @@
 .github_btn {
   background: url("../img/github.png") center / cover;
 }
+.pdf_btn {
+  background: url("../img/pdf.png") center / cover;
+}
 .my_info_section {
   display: flex;
   flex-direction: column;
