@@ -10,12 +10,15 @@
   font-family: "dh";
   src: url("../font/BMDOHYEON_ttf.ttf");
 }
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 #wrap {
   position: relative;
   background-color: #eee;
   font-family: "scolth-free";
-
-  /* background: url("../img/background.jpeg") no-repeat center / cover; */
 }
 
 .w_1000 {
@@ -104,77 +107,15 @@
 }
 .skill_item {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  width: 50%;
-  height: calc(100% / 3);
+  width: calc(100% / 3);
+  height: 50%;
   position: relative;
-}
-.skill_img_box {
-  width: 150px;
   font-size: 0;
 }
 .skill_item img {
-  width: 100%;
-}
-.skill_item::after {
-  color: #333;
-  position: absolute;
-  top: 20px;
-  right: 10px;
-}
-.skill_score_box {
-  width: 100%;
-  height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.skill_score {
-  height: 100%;
-  background-color: #ccc;
-}
-/* js */
-.skill_item:nth-child(1) .skill_score {
-  width: 80%;
-}
-.skill_item:nth-child(1)::after {
-  content: "80%";
-}
-/* jquery */
-.skill_item:nth-child(2) .skill_score {
-  width: 90%;
-}
-.skill_item:nth-child(2)::after {
-  content: "90%";
-}
-/* mysql */
-.skill_item:nth-child(3) .skill_score {
-  width: 80%;
-}
-.skill_item:nth-child(3)::after {
-  content: "80%";
-}
-/* java */
-.skill_item:nth-child(4) .skill_score {
-  width: 90%;
-}
-.skill_item:nth-child(4)::after {
-  content: "90%";
-}
-/* spring */
-.skill_item:nth-child(5) .skill_score {
-  width: 90%;
-}
-.skill_item:nth-child(5)::after {
-  content: "90%";
-}
-/* mybatis */
-.skill_item:nth-child(6) .skill_score {
-  width: 80%;
-}
-.skill_item:nth-child(6)::after {
-  content: "80%";
+  width: 40%;
 }
 .full_section {
   background-color: #ccc;
@@ -184,6 +125,7 @@
   background-color: #eee;
   padding: 20px 10px;
   border-radius: 20px;
+  font-family: "dh";
 }
 .portfolio_title {
   text-align: center;
@@ -205,7 +147,8 @@
   width: 90%;
 }
 .portfolio_desc_box {
-  font-size: 18px;
+  width: 60%;
+  font-size: 17px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -275,4 +218,22 @@
   100% {
     transform: translateY(0);
   }
+}
+.portfolio_box:nth-child(2) .portfolio_content_box {
+  padding: 0 40px;
+  line-height: 24px;
+}
+.portfolio_box:nth-child(3) .portfolio_content_box {
+  padding: 0 50px;
+  line-height: 24px;
+}
+
+.portfolio_box:nth-child(3) .portfolio_img_box {
+  width: 50%;
+}
+.portfolio_box:nth-child(3) img {
+  width: 70%;
+}
+.portfolio_box:nth-child(3) .portfolio_desc {
+  padding-top: 80px;
 }
